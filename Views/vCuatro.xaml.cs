@@ -5,5 +5,6 @@ public partial class vCuatro : ContentPage
 	public vCuatro()
 	{
 		InitializeComponent();
+		//Nuevo cambio
 	}
 }
