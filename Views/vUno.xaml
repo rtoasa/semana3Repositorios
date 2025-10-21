@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rtoasas3A.Views.vUno"
+             Title="uno">
+    <VerticalStackLayout
+        Spacing="20"
+        Padding="20">
+        <Label 
+            Text="VISTA UNO"
+            VerticalOptions="Center" 
+            FontSize="20"
+            HorizontalOptions="Center" />
+        <Entry x:Name="txtUsuario"
+               Placeholder="Ingresa el usuario"/>
+        <Entry x:Name="txtContrasena"
+               IsPassword="True"
+               Placeholder="Ingresa la contraseña"/>
+
+        <Button x:Name="btnAbrir" 
+                Text="Abrir Ventana"
+                Clicked="btnAbrir_Clicked"/>
+        <Button x:Name="btnRegistro"
+                Text="Abrir ventana de registro"
+                Clicked="btnRegistro_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>
