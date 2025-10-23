@@ -3,13 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="rtoasas3A.Views.vUno"
              Title="uno">
+    <!--ESTILOS-->
+    <ContentPage.Resources>
+        <Style x:Key="estiloLabel" TargetType="Label">
+            <Setter Property="FontSize" Value ="50" />
+            <Setter Property="TextColor" Value="RED"/>
+        </Style>
+        <Style x:Key="estilobutton" TargetType="Button">
+            <Setter Property="Background" Value="Yellow"/>
+            <Setter Property="TextColor" Value="Blue"/>
+
+
+
+        </Style>
+    </ContentPage.Resources>
+    
     <VerticalStackLayout
         Spacing="20"
         Padding="20">
         <Label 
+            Style="{StaticResource estiloLabel}" 
             Text="VISTA UNO"
             VerticalOptions="Center" 
-            FontSize="20"
+           
             HorizontalOptions="Center" />
         <Entry x:Name="txtUsuario"
                Placeholder="Ingresa el usuario"/>
@@ -18,9 +34,11 @@
                Placeholder="Ingresa la contraseña"/>
 
         <Button x:Name="btnAbrir" 
+                Style="{StaticResource estilobutton}"
                 Text="Abrir Ventana"
                 Clicked="btnAbrir_Clicked"/>
         <Button x:Name="btnRegistro"
+                Style="{StaticResource estilobutton}"
                 Text="Abrir ventana de registro"
                 Clicked="btnRegistro_Clicked"/>
 

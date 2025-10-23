@@ -6,14 +6,17 @@
     
     <VerticalStackLayout>
         <Label 
+            Style="{StaticResource labelGlobal}"
             Text="VISTA DOS"
             FontSize="18"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <!--objeto que recibe el dato-->
         <Label x:Name="lbldato1"
-               TextColor="red"/>
+               Style="{StaticResource labelGlobal}"
+               />
         <Label x:Name="lbldato2"
+               Style="{StaticResource labelGlobal}"
          TextColor="red"/>
 
 
